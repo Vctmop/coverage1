@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antenna Coverage</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id=content>
+        <div id="map-template">
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+            <script src="/js/main.js"></script>
+        </div>
+            <div id="dataInputInterface">
+                <div id= "TrasmisorHeader">
+                    <h4>Transmisor</h4>
+                </div>
+                <form id="product-form" class="data-body">
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pt" placeholder="Potencia Transmisor dB" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Ganancia" placeholder="Ganancia antenna dB" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="eficienciaT" placeholder="Eficiencia antenna %" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="f" placeholder="Frecuencia de trabajo GHz" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Bw" placeholder="Ancho de banda GHz" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="ht" placeholder="Altura transmisor" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="ltt" placeholder="Perdidas en terminal" class="form-control">
+                    </div>
+                    <div id= "ReceptorHeader">
+                        <h4>Receptor</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Sr" placeholder="Sensibilidad dB" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="M" placeholder="Margen antenna dB" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Fsis" placeholder="Figura de ruido" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="eficienciaR" placeholder="Eficiencia %" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="hr" placeholder="Altura Receptor" class="form-control">
+                    </div>
+                    <div id= "interfereteHeader">
+                        <h4>Interferentes</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="interN" placeholder="Numero de antenas interferentes" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pi1" placeholder="Potencia interferente 1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Gi1" placeholder="Ganancia interferente 1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pi2" placeholder="Potencia interferente 2" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Gi2" placeholder="Ganancia interferente 2" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pi3" placeholder="Potencia interferente 3" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Gi3" placeholder="Ganancia interferente 3" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pi4" placeholder="Potencia interferente 4" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Gi4" placeholder="Ganancia interferente 4" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Pi5" placeholder="Potencia interferente 5" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="Gi5" placeholder="Ganancia interferente 5" class="form-control">
+                    </div>
+                    <div id= "Distribucion">
+                        <h4>Distribución estadistica</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="PE" placeholder="Probabilidad de exito" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.0000001" id="distor" placeholder="Distorción" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" step="0.0000001" id="dist" placeholder="G/N/L" class="form-control">
+                    </div>
+                    <input type="submit" value="Set" class="btn btn-primary">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
